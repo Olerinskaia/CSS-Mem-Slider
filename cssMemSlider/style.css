@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.slider {
+  height: 40%;
+  width: 90%;
+  background-color: rgb(18, 13, 13);
+  border: 5px solid rgb(69, 66, 66);
+  border-radius: 10px;
+  display: flex;
+}
+.wrapper {
+  justify-content: center;
+  width: 80%;
+  margin: 40px auto;
+  align-items: center;
+}
+.carousel {
+  width: 400%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+.slider__wrapper {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+}
+.switch:hover {
+  background-color: blue;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  /* margin: 10px auto; */
+  justify-content: space-between;
+}
+
+.text {
+  bottom: 16px;
+  /* display: flex; */
+  width: 250px;
+  height: 50px;
+  color: antiquewhite;
+  overflow: hidden;
+
+  height: 10%;
+}
+.p_wrapper {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.paragraph {
+  width: 100%;
+}
+.switch {
+  height: 20px;
+  width: 20px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: rgb(160, 40, 40);
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.switch:hover {
+  opacity: 1;
+  transform: scale(2.1);
+}
+input[name='radiobutton'] {
+  visibility: hidden;
+  position: absolute;
+}
+.image {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+#r1:checked ~ .i1 {
+  margin-left: 0%;
+}
+
+#r2:checked ~ .i1 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .i1 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .i1 {
+  margin-left: -75%;
+}
+#r1:checked ~ .t1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .t1 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .t1 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .t1 {
+  margin-left: -75%;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .navigation {
+    order: -1;
+  }
+}
