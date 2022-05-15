@@ -34,7 +34,6 @@ section {
   display: flex;
   padding: 10px;
   justify-content: space-around;
-  /* width: 0%; */
 }
 .switch:hover {
   background-color: blue;
@@ -68,7 +67,6 @@ section {
   height: 25px;
   width: 25px;
   margin: 5px;
-  /* padding: -40px; */
   cursor: pointer;
   background-color: rgb(160, 40, 40);
   opacity: 0.5;
@@ -106,21 +104,6 @@ img {
 #r4:checked ~ .i1 {
   margin-left: -75%;
 }
-/* #r5:checked ~ .t1 {
-  margin-left: 0;
-}
-
-#r6:checked ~ .t1 {
-  margin-left: -25%;
-}
-
-#r7:checked ~ .t1 {
-  margin-left: -50%;
-}
-
-#r8:checked ~ .t1 {
-  margin-left: -75%;
-} */
 
 @media (max-width: 605px) {
   .footer {
