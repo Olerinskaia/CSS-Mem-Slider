@@ -34,7 +34,7 @@ section {
   display: flex;
   padding: 10px;
   justify-content: space-around;
-  width: 30%;
+  /* width: 0%; */
 }
 .switch:hover {
   background-color: blue;
@@ -67,8 +67,8 @@ section {
 .switch {
   height: 25px;
   width: 25px;
-  margin: 20px;
-  padding: -40px;
+  margin: 5px;
+  /* padding: -40px; */
   cursor: pointer;
   background-color: rgb(160, 40, 40);
   opacity: 0.5;
